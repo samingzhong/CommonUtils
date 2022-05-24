@@ -7,8 +7,11 @@
 //
 
 #import "XMViewController.h"
+#import "CommonUtilsHeader.h"
 
 @interface XMViewController ()
+
+
 
 @end
 
@@ -18,6 +21,9 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    id info = [CommonUtils getInfo];
+    NSLog(@"info:%@", info);
 }
 
 - (void)didReceiveMemoryWarning
